@@ -16,12 +16,13 @@
   </header>
 
   <main>
-    <h1>Dear school-girls! We welcome you and your pets at our Magic School</h1>
-    <p>Please provide us with full information about your magic pets</p>
+    <h1>Dear schoolgirls! We welcome you and your pets at our Magic School</h1>
+    <p>Please provide us with the information about your magic pets</p>
+    <p>Required fields are marked with *</p>
     <form>
       <div>
         <label for="pet-name" class="label">Name of your magic pet</label>
-        <input type="text" id="pet-name" required>
+        <input type="text" id="pet-name" required><span> *</span>
       </div>
 
       <div>
@@ -31,14 +32,14 @@
           <option value="1">Unicorn</option>
           <option value="2">Phoenix</option>
           <option value="3">Pegasus</option>
-          <option value="4">Cheshire Cat</option>
-          <option value="5">Owl</option>
-          <option value="6">Other, please describe in comments</option>
-        </select>
+          <option value="4">Magic Cat</option>
+          <option value="5">Magic Owl</option>
+          <option value="6">Other, please write below</option>
+        </select><span> *</span>
       </div>
 
       <div>
-        <label for="other-breed" class="label">Please, write your pet's breed</label>
+        <label for="other-breed" class="label">Please, write your pet's breed if it is noe specified above</label>
         <input type="text" id="other-breed" maxlength="30">
       </div>
 
@@ -51,8 +52,48 @@
         </fieldset>
       </div>
 
+      <div>
+        <fieldset>
+          <legend>Your pet's food</legend>
+          <input type="checkbox" id="nectar" name="food"><label for="nectar">Nectar</label><br>
+          <input type="checkbox" id="flowers" name="food"><label for="flowers">Flowers</label><br>
+          <input type="checkbox" id="moon-water" name="food"><label for="moon-water">Moon-water</label><br>
+          <input type="checkbox" id="air" name="food"><label for="air">Air</label><br>
+          <input type="checkbox" id="tender-words" name="food"><label for="tender-words">Tender words</label>
+        </fieldset>
+      </div>
 
+      <div>
+        <label for="photo" class="label">We will be glad to have a look at your pet. Please attach his or her photo</label>
+        <input type="file" id="photo" accept="image/*">
+      </div>
+
+      <div>
+        <fieldset>
+          <legend>Owner Information</legend>
+          <label for="owner-name">Your name: </label><input type="text" id="owner-name" name="owner-name" placeholder="your name" required><span> *</span><br>
+          <label for="owner-tel">Your phone number in format +1 (xxx) xxx-xx-xx: </label><input type="tel" id="owner-tel" name="owner-tel" placeholder="+1 (123) 456-78-90"><span> *</span><br>
+          <label for="owner-email">Your e-mail: </label><input type="email" id="owner-email" name="owner-email">
+        </fieldset>
+      </div>
+
+      <div>
+        <label for="comments">Please, describe your animal to us: </label><br><textarea name="comments" id="comments" cols="50" rows="10"></textarea>
+      </div>
+
+      <p>Thank you! We hope, your pet will feel comfortable at our School</p>
+
+      <div>
+        <input type="submit" value="Save Yor Info">
+      </div>
     </form>
   </main>
+
+  <footer id="contacts">
+    <div>
+      <p>&copy; Magic School 2023</p>
+      <p><a href="https://elenasinelle.github.io/merlin/" target="_blank">ElenaSinelle</a></p>
+    </div>
+  </footer>
 </body>
 </html>
