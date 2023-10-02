@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magic Pets</title>
+</head>
+<body>
+  <header>
+    <figure>
+      <img src="" alt="">
+      <figcaption>Magic School</figcaption>
+    </figure>
+    <h2>Magic Pets of Magic School</h2>
+  </header>
+
+  <main>
+    <h1>Dear school-girls! We welcome you and your pets at our Magic School</h1>
+    <p>Please provide us with full information about your magic pets</p>
+    <form>
+      <div>
+        <label for="pet-name" class="label">Name of your magic pet</label>
+        <input type="text" id="pet-name" required>
+      </div>
+
+      <div>
+        <label for="breed" class="label">Your magic pet's breed</label>
+        <select name="breed" id="breed" required>
+          <option value="caption" disabled selected>Please select breed</option>
+          <option value="1">Unicorn</option>
+          <option value="2">Phoenix</option>
+          <option value="3">Pegasus</option>
+          <option value="4">Cheshire Cat</option>
+          <option value="5">Owl</option>
+          <option value="6">Other, please describe in comments</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="other-breed" class="label">Please, write your pet's breed</label>
+        <input type="text" id="other-breed" maxlength="30">
+      </div>
+
+      <div>
+        <fieldset>
+          <legend>Your pet's sex</legend>
+          <input type="radio" id="female" name="sex"><label for="female">Female</label><br>
+          <input type="radio" id="male" name="sex"><label for="male">Male</label><br>
+          <input type="radio" id="magic" name="sex"><label for="magic">Magic</label>
+        </fieldset>
+      </div>
+
+
+    </form>
+  </main>
+</body>
+</html>
