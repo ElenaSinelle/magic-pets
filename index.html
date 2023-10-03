@@ -21,6 +21,7 @@
       color: aliceblue;
       background-image: url(https://krmagic.co.nz/cdn/shop/products/Screenshot_20220905_083255_903x.jpg?v=1662371444);
       background-size: cover;
+      font-size: 1.3rem;
     }
     a {
       color:  rgb(120, 184, 240);
@@ -45,11 +46,13 @@
     <h3 style="padding-right: 40px;">Magic Pets of Magic School</h3>
   </header>
 
-  <main>
+  <main style="padding: 0 40px 20px 40px;">
     <h1>Dear schoolgirls! We welcome you and your pets at our Magic School</h1>
     <p>Please provide us with the information about your magic pets</p>
     <p>Required fields are marked with a star (*)</p>
-    <form>
+    <form style="display: flex;
+    flex-direction: column;
+    gap: 10px;">
       <div>
         <label for="pet-name" class="label">Name of your magic pet</label>
         <input type="text" id="pet-name" required><span> *</span>
@@ -108,13 +111,19 @@
       </div>
 
       <div>
-        <label for="comments">Please, describe your animal to us: </label><br><textarea name="comments" id="comments" cols="50" rows="10"></textarea>
+        <label for="comments">Please, describe your animal to us: </label><br><textarea name="comments" id="comments" cols="100" rows="10"></textarea>
       </div>
 
       <p>Thank you! We hope, your pet will feel comfortable at our School</p>
 
       <div>
-        <input type="submit" value="Save Yor Info">
+        <input type="submit"
+          value="Save Yor Info"
+          style="font-size: 1.5rem;
+          background-color: rgb(113, 171, 242);
+          border-radius: 8px;
+          padding: 10px 40px;
+          cursor: pointer;">
       </div>
     </form>
   </main>
